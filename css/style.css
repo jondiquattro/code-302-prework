@@ -1,13 +1,13 @@
 
-/* #bodyDiv {
+#bodyDiv {
     margin: 0 auto;
-    background: red;
-} */
+    background: grey;
+}
 /* creates grid inside header */
 .headerGrid{
     /* background: #ddd; */
     display: grid;
-    grid-template-columns: 69% 31%;
+    grid-template-columns: 61% 37%;
     /* same affect as grid-gap */
     /* grid-column-gap: 1em;
     grid-row-gap: 1 em; */
@@ -21,34 +21,37 @@
     height: 70px;
 }
 
-/* .headerGrid div:nth-child(odd){
+.headerGrid {
     background: #ddd;
 }
-.headerGrid div:nth-child(even){
+/* .headerGrid div:nth-child(even){
     background: #eee;
 } */
 #headLeft{
+margin-top: 12px;
 width: 300px;
 /* height: 100px; */
-/* background: red; */
-/* padding-top: 10px; */
+background: red;
+/* padding-top: 6px; */
 }
 /* gets delicios and text to float next to image */
 #headLeft img {
+    margin-top: 4px;
     float: left;
     padding-right: 8px;
 }
 
 /* sets fon for delicious */
-#headLeft :nth-last-child(2){
+.headLeftText :nth-child(1) {
     
     font-family: 'Yellowtail', cursive;
-    font-size: 40px
+    font-size: 40px;
+    font-weight: 50;
     
 }
-#headLeft :nth-last-child(1){
-    /* font-family: 'Yellowtail', cursive; */
-    /* margin: 1px; */
+.headLeftText :nth-child(2){
+    /* font-family: 'Yellowtail', cursive;
+    margin: 1px; */
     font-size: 12px;
     font-weight: bold;
     
@@ -57,10 +60,12 @@ width: 300px;
 #headRight{
     width: 300px;
     padding-top: 30px;
-    
+    /* background: red; */
+    padding-left: 10px;
 }
 
 #headRight ul li{
+    
     margin-right: 2px;
     display: inline;
     float: left;
@@ -75,12 +80,13 @@ width: 300px;
     margin-left: 60px;
 }
 #piping{
+    margin-top: 2px;
     font-size: 20px;
     margin-left: 18px;
 }
 /* makes the title banner into a grid */
 .titleBanner{
-    background: #ddd;
+    /* background: #ddd; */
     display: grid;
     grid-template-columns: 69% 31%;
     /* same affect as grid-gap */
@@ -89,21 +95,61 @@ width: 300px;
     width: 960px;
     grid-gap: 1em;
     margin-left: 16px;
-    margin-top: 70px;
+    margin-top: 52px;
 }
-#bannerLeft{
+/* #bannerLeft{
     background: red;
-}
+} */
 #bannerLeft :nth-child(1){
-    font-size: 48px;
+    font-size: 44px;
     font-family: 'Anton', sans-serif;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 #bannerLeft :nth-child(2){
     font-size: 16px;
     /* font-family: 'Anton', sans-serif; */
 }
+#bannerRight p {
+    float: right;
+    margin-top: 40px;
+    margin-right: 78px;
+}
+#bannerRight img{
+    margin-top: 44px;
+    margin-right: 5px;
+    float: right;
+}
 #mainImg{
     margin-left: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+#instructions{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    margin-left: 15px;
+    margin-top: 28px;
+    width: 900px;
+    text-indent: 38px;
+}
+
+/* #listImg{
+    margin-left: 15px;
+} */
+
+.instructionCard{
+        background: #ddd;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        background-image: url("/assets/list-bg.png");
+        background-repeat: no-repeat;
+    margin-left: 16px;
+}
+#instructionsLeft ul {
+    list-style: square;
+    margin-left: 70px;
+}
+#instructionsRight ul {
+    list-style: square;
+    /* margin-left: 70px; */
 }
