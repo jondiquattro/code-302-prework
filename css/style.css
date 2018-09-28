@@ -138,18 +138,75 @@ background: red;
 } */
 
 .instructionCard{
-        background: #ddd;
-        display: grid;
-        grid-template-columns: 30% 30%;
-        background-image: url("/assets/list-bg.png");
-        background-repeat: no-repeat;
+    background: #ddd;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    background-image: url("/assets/list-bg.png");
+    background-repeat: no-repeat;
     margin-left: 16px;
+    border-bottom: 4px solid black;
+    width: 960px;
 }
 #instructionsLeft ul {
     list-style: square;
     margin-left: 70px;
+    margin-top: 16px;
+    
 }
 #instructionsRight ul {
     list-style: square;
-    /* margin-left: 70px; */
+    margin-left: 70px;
+    width: 250px;
+    margin-bottom: 40px;
+}
+.instructionCard div ul li{
+margin-bottom: 8px;
+margin-top: 16px;
+/* margin-left: 80px; */
+}
+#instructionsRight ul :last-child{
+    /* background: red; */
+    list-style: none;
+}
+#bottomPiping{
+    margin-top: 30px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 71% 28%;
+    width: 920px;
+}
+
+.bottom img{
+    margin-left: 16px;
+    float:left;
+    border-radius: 50%;
+}
+
+.bottom ul :nth-child(1){
+    float: left;
+    background: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.bottom ul :nth-child(2){
+    float: left;
+    margin-top: 20px;
+    background: blue;
+}
+#bottomRight{
+    /* background: #da5b24; */
+    background: red;
+    
+}
+
+#bottomRight p{
+    color: white;
+    font-size: 18px;
+    background: #da5b24;
+    width: 140px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left:30px;
+    padding-right: 8px;
 }
